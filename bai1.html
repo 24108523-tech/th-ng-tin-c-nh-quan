@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài tập CSS Grid & Flexbox</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Chuyển đến Nội dung chính</a>
+
+  <nav>
+    <img src="https://picsum.photos/id/10/100/100" alt="Logo trang web">
+    <ul>
+      <li><a href="#">Trang chủ</a></li>
+      <li><a href="#about">Giới thiệu</a></li>
+      <li><a href="#parks">Công viên</a></li>
+      <li><a href="#contact">Liên hệ</a></li>
+    </ul>
+  </nav>
+
+  <main id="main">
+    <section id="about" class="about-section">
+      <h2>Giới thiệu về chúng tôi</h2>
+      <p>Chào mừng bạn đến với trang thông tin cảnh quan thiên nhiên và công viên. Chúng tôi cung cấp những hình ảnh và thông tin cập nhật về các điểm đến xanh, giúp bạn có thêm cảm hứng khám phá và thư giãn sau những giờ làm việc mệt mỏi.</p>
+    </section>
+
+    <section class="grid">
+      <div class="grid-item">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=500" alt="Bờ biển nắng đẹp">
+        <p>Mô tả hình ảnh 1</p>
+      </div>
+      <div class="grid-item">
+        <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=500" alt="Núi tuyết ban đêm">
+        <p>Mô tả hình ảnh 2</p>
+      </div>
+      <div class="grid-item">
+        <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=500" alt="Rừng sương mù">
+        <p>Mô tả hình ảnh 3</p>
+      </div>
+      <div class="grid-item">
+        <img src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=500" alt="Khu rừng mùa thu">
+        <p>Mô tả hình ảnh 4</p>
+      </div>
+    </section>
+
+    <section id="parks" class="flex">
+      <div class="flex-item">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=500" alt="Cảnh công viên xanh">
+        <p>Công viên A</p>
+      </div>
+      <div class="flex-item">
+        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=500" alt="Lối đi trong công viên">
+        <p>Công viên B</p>
+      </div>
+      <div class="flex-item">
+        <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=500" alt="Đồng cỏ xanh">
+        <p>Công viên C</p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <h2>Thẻ Liên Hệ</h2>
+      <p>Nếu bạn có bất kỳ thắc mắc hoặc đóng góp ý kiến nào, vui lòng liên hệ với chúng tôi theo thông tin dưới đây:</p>
+      
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3>Thông tin liên lạc</h3>
+          <p><strong>Địa chỉ:</strong> 123 Đường Tự Do, Quận Hà Đông, TP. Hà Nội</p>
+          <p><strong>Email:</strong> lienhe@example.com</p>
+          <p><strong>Điện thoại:</strong> (024) 1234 5678</p>
+        </div>
+
+        <form class="contact-form">
+          <h3>Gửi tin nhắn</h3>
+          <label for="name">Họ và tên:</label>
+          <input type="text" id="name" name="name" required placeholder="Nhập họ và tên">
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required placeholder="Nhập địa chỉ email">
+
+          <label for="message">Lời nhắn:</label>
+          <textarea id="message" name="message" rows="4" required placeholder="Nhập nội dung tin nhắn..."></textarea>
+
+          <button type="submit">Gửi ngay</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>
