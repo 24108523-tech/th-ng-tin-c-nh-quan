@@ -3,81 +3,104 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Góc Cà Phê - Hương Vị Nguyên Bản</title>
+  <title>Vị Phố - Ẩm Thực Đường Phố Việt Nam</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <a href="#main" class="skip-link">Chuyển đến Nội dung chính</a>
+  <!-- Skip Link cho Accessibility -->
+  <a href="#main-content" class="skip-link">Chuyển đến nội dung chính</a>
 
   <header>
-    <div class="logo-area">
-      <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=100" alt="Logo Góc Cà Phê">
-      <h1>GÓC CÀ PHÊ</h1>
+    <div class="header-container">
+      <div class="logo-area">
+        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=150&q=80" alt="Logo Vị Phố">
+        <h1>VỊ PHỐ <span>VIỆT NAM</span></h1>
+      </div>
+      <nav aria-label="Điều hướng chính">
+        <ul>
+          <li><a href="index.html" class="active">Trang chủ</a></li>
+          <li><a href="menu.html">Thực đơn</a></li>
+          <li><a href="#contact">Liên hệ</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav>
-      <ul>
-        <li><a href="#about">Giới thiệu</a></li>
-        <li><a href="#menu">Thực đơn</a></li>
-        <li><a href="#space">Không gian</a></li>
-        <li><a href="#contact">Liên hệ</a></li>
-      </ul>
-    </nav>
   </header>
 
-  <main id="main">
-    <section id="about" class="intro">
-      <h2>Về Chúng Tôi</h2>
-      <p>Góc Cà Phê mang đến những hạt cà phê rang xay nguyên chất được tuyển chọn từ vùng đất Tây Nguyên. Đến với chúng tôi, bạn sẽ được thưởng thức hương vị cà phê đậm đà trong một không gian yên tĩnh và ấm cúng.</p>
+  <main id="main-content">
+    <!-- Banner Giới Thiệu -->
+    <section class="hero card">
+      <div class="hero-tag">Đặc sản Phố Cổ</div>
+      <h2>HƯƠNG VỊ ĐƯỜNG PHỐ CHÂN THẬT</h2>
+      <p>Chào mừng bạn đến với <strong>Vị Phố</strong>. Chúng tôi mang đến những món ăn đậm đà bản sắc Việt Nam với nguyên liệu tươi ngon chọn lọc mỗi ngày trong không gian đậm chất phố thị.</p>
     </section>
 
-    <section id="menu" class="menu-section">
-      <h2>Thực Đơn Nổi Bật</h2>
-      <div class="menu-grid">
-        <div class="menu-card">
-          <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?w=400" alt="Cà phê Cốt Dừa">
-          <h3>Cà Phê Cốt Dừa</h3>
-          <p>Sự kết hợp hoàn hảo giữa đắng nhẹ của espresso và béo ngậy của cốt dừa.</p>
+    <!-- Nổi Bật Trang Chủ (CSS Grid) -->
+    <section class="card">
+      <h2>MÓN ĂN BÁN CHẠY NHẤT</h2>
+      <div class="grid-container">
+        <article class="grid-card">
+          <div class="badge">Best Seller</div>
+          <img src="https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?auto=format&fit=crop&w=600&q=80" alt="Tô phở bò truyền thống bốc khói">
+          <h3>Phở Bò Gia Truyền</h3>
+          <p>Nước dùng đậm đà ninh từ xương ống trong 12 tiếng, ăn kèm bánh phở tươi mềm và rau thơm.</p>
+        </article>
+        <article class="grid-card">
+          <div class="badge HOT">Gợi Ý</div>
+          <img src="https://images.unsplash.com/photo-1626804475297-41608e074eb1?auto=format&fit=crop&w=600&q=80" alt="Ổ bánh mì giòn kẹp thịt">
+          <h3>Bánh Mì Thập Cẩm</h3>
+          <p>Vỏ bánh giòn rụm kẹp pate nhà làm, chả lụa, dưa góp chua ngọt và rau thơm chuẩn vị street food.</p>
+        </article>
+        <article class="grid-card">
+          <div class="badge">Món Tươi</div>
+          <img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=600&q=80" alt="Đĩa gỏi cuốn tôm thịt tươi ngon">
+          <h3>Gỏi Cuốn Tôm Thịt</h3>
+          <p>Bánh tráng cuộn tôm tươi, thịt luộc, bún và rau sống, chấm cùng tương đen béo ngậy.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Góc Quán Đời Thường (Flexbox) -->
+    <section class="card">
+      <h2>KHÔNG GIAN QUÁN BÌNH DỊ</h2>
+      <div class="flex-container">
+        <div class="flex-item">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80" alt="Bàn ăn ngoài trời không gian mở">
+          <p>Bàn ăn vỉa hè thoáng mát, đông vui</p>
         </div>
-        <div class="menu-card">
-          <img src="https://images.unsplash.com/photo-1517256064527-09c73fc73e38?w=400" alt="Cà phê Bạc Xỉu">
-          <h3>Bạc Xỉu Đá</h3>
-          <p>Hương vị truyền thống ngọt ngào, thơm béo phù hợp cho buổi sáng nhẹ nhàng.</p>
-        </div>
-        <div class="menu-card">
-          <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=400" alt="Cà phê Cappuccino">
-          <h3>Cappuccino</h3>
-          <p>Lớp bọt sữa mịn màng cùng tạo hình nghệ thuật tỉ mỉ từ Barista.</p>
+        <div class="flex-item">
+          <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=600&q=80" alt="Góc bếp chế biến tươi sống">
+          <p>Bếp mở chế biến tại chỗ sạch sẽ</p>
         </div>
       </div>
     </section>
 
-    <section id="space" class="space-section">
-      <h2>Không Gian Quán</h2>
-      <div class="space-flex">
-        <div class="space-item">
-          <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=500" alt="Góc ngồi làm việc yên tĩnh">
-          <p>Góc làm việc yên tĩnh với ánh sáng tự nhiên</p>
+    <!-- Thông Tin Liên Hệ -->
+    <section id="contact" class="card contact-card">
+      <h2>THÔNG TIN LIÊN HỆ & ĐẶT BÀN</h2>
+      <div class="contact-grid">
+        <div class="contact-info-item">
+          <strong>📍 Địa chỉ:</strong>
+          <span>12 Ngõ Chợ Đồng Xuân, Quận Hoàn Kiếm, Hà Nội</span>
         </div>
-        <div class="space-item">
-          <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=500" alt="Khu vực sân vườn xanh mát">
-          <p>Khu vực ngoài trời thoáng đãng, nhiều cây xanh</p>
+        <div class="contact-info-item">
+          <strong>⏰ Giờ phục vụ:</strong>
+          <span>06:00 - 21:30 (Tất cả các ngày trong tuần)</span>
         </div>
-      </div>
-    </section>
-
-    <section id="contact" class="contact-section">
-      <h2>Ghé Thăm Quán</h2>
-      <div class="contact-box">
-        <p><strong>Địa chỉ:</strong> 45 Đường Hoa Hồng, Phường 2, Quận Phú Nhuận, TP.HCM</p>
-        <p><strong>Giờ mở cửa:</strong> 07:00 - 22:30 hàng ngày</p>
-        <p><strong>Hotline đặt bàn:</strong> 0909 123 456</p>
+        <div class="contact-info-item">
+          <strong>📞 Hotline đặt món:</strong>
+          <span>0988 123 456</span>
+        </div>
+        <div class="contact-info-item">
+          <strong>✉️ Email:</strong>
+          <span>lienhe@viphovietnam.com</span>
+        </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2026 Góc Cà Phê. Tất cả quyền được bảo lưu.</p>
+    <p>&copy; 2026 Vị Phố Việt Nam. Bảo lưu mọi quyền.</p>
   </footer>
 
 </body>
